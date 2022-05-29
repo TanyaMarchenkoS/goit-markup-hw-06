@@ -554,10 +554,11 @@ ul {
   margin-left: 70px;
 }
 /* Соц. сети icons Footer  */
-.footer-title {
+.footer-title,
+.subscribe-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -593,6 +594,11 @@ ul {
 }
 .socials-icons {
   fill: #ffffff;
+}
+
+/* Подпишитесь на рассылку футер */
+.subscribe {
+  margin-left: auto;
 }
 
 
