@@ -267,6 +267,12 @@ ul {
   color: var(--second-txt-cl);
 }
 
+.modal-form {
+  display: block;
+  margin-top: 0;
+  color: #000000;
+}
+
 /* особенности */
 .specifics-list {
   display: flex;
