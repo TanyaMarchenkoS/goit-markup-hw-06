@@ -288,8 +288,7 @@ ul {
 .inputs {
   width: 448px;
   height: 377px;
-  margin-top: 21px;
-  outline: 1px solid tomato;
+  margin-top: 21px; 
 }
 .form-field {
   display: flex;
@@ -302,11 +301,19 @@ ul {
   height: 38.95px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 11px 12px 11px 42px;
+
+  transition: border var(--anim-duration) var(--timing-anim);
 }
 .form-field .form-lable {
   text-align: left;
   margin-bottom: 4px;
 }
+.form-field:hover .form-input,
+.form-field:focus .form-input {
+  border: 1px solid var(--accent-color);
+}
+
 .form-textarea {
   height: 116.84px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -315,6 +322,11 @@ ul {
   padding-top: 12px;
   padding-left: 16px;
   color: rgba(117, 117, 117, 0.5);
+  transition: border var(--anim-duration) var(--timing-anim);
+}
+.form-field:hover .form-textarea,
+.form-field:focus .form-textarea {
+  border: 1px solid var(--accent-color);
 }
 .form-field-checbox {
   display: flex;
@@ -324,6 +336,10 @@ ul {
 .form-field-checbox label {
   font-size: 14px;
   line-height: 1.71;
+}
+.contract {
+  color: var(--accent-color);
+  text-decoration-line: underline;
 }
 .submit-btn {
   width: 200px;
@@ -341,17 +357,21 @@ ul {
   border: none;
   justify-content: center;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form-modal-icon {
   position: absolute;
-  bottom: 12px;
-  left: 10px;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  transition-property: fill;
+  bottom: 11px;
+  left: 12px;
   fill: var(--second-txt-cl);
+  transition: fill var(--anim-duration) var(--timing-anim);
+  
 }
-
+.form-field:hover .form-modal-icon,
+.form-field:focus .form-modal-icon {
+  fill: var(--accent-color); 
+}
 /* особенности */
 .specifics-list {
   display: flex;
