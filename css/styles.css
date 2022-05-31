@@ -267,10 +267,53 @@ ul {
   color: var(--second-txt-cl);
 }
 
-.modal-form {
-  display: block;
-  margin-top: 0;
-  color: #000000;
+/* форма */
+.form {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  color: var(--main-txt-cl);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.inputs {
+  width: 448px;
+  height: 377px;
+  margin-top: 21px;
+  outline: 1px solid tomato;
+}
+.form-field {
+  display: flex;
+  /* поставить рядки один над одним */
+  flex-direction: column;
+}
+.form-field .form-input {
+  height: 38.95px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-field .form-lable {
+  text-align: left;
+  margin-bottom: 4px;
+}
+.form-textarea {
+  height: 116.84px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding-top: 12px;
+  padding-left: 16px;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-txt-cl);
 }
 
 /* особенности */
