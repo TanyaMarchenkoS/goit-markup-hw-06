@@ -103,15 +103,19 @@
                     <label class="form-lable" name="comment" for="comment">Комментарий</label>
                     <textarea class="form-textarea" name="comment" id="comment" placeholder="Введите текст">Введите текст</textarea>
                   </div>
-                  <div class="form-field-checbox">
-                    <input class="form-input-yes" type="checkbox" name="yes" value="yes" id="yes" />
-                    <label class="form-lable-yes" for="yes">Соглашаюсь с рассылкой и принимаю 
-                      <span class="contract">Условия договора</span></label>
-                  </div>
+                  <label class="form-field-checbox">
+                     <input class="form-input-yes visually-hidden"  type="checkbox"/>
+                     <span class="custom-checbox">
+                       <svg class="custom-checbox-icon" width="16" height="15">
+                         <use href="./images/icons.svg#icon-check"></use>
+                       </svg>
+                     </span>
+                    Соглашаюсь с рассылкой и принимаю
+                    <span class="contract">Условия договора</span>
+                  </label>
                 </div>
                 <button class="submit-btn" type="submit">Отправить</button>
               </form>
-
             </div>
           </div>
         </div>
