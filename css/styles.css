@@ -299,10 +299,11 @@ ul {
   margin-top: 21px;
 }
 .form-field {
+  width: 100%;
   display: flex;
   /* поставить рядки один над одним */
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
   margin-bottom: 10px;
 }
 
@@ -379,7 +380,6 @@ ul {
 }
 .contract {
   color: var(--accent-color);
-  text-decoration-line: underline;
 }
 .submit-btn {
   width: 200px;
@@ -402,13 +402,21 @@ ul {
   cursor: pointer;
   transition: background-color var(--anim-duration) var(--timing-anim);
 }
+.form-input {
+  display: block;
+  width: 100%;
+}
+.form-input-icon {
+  display: flex;
+  position: relative;
+}
 .form-modal-icon {
   position: absolute;
   top: 50%;
   left: 12px;
-  transform: translateY(-0%);
+  transform: translateY(-50%);
   fill: var(--second-txt-cl);
-  transition: fill var(--anim-duration) var(--timing-anim); 
+  transition: fill var(--anim-duration) var(--timing-anim);
 }
 .form-field:hover .form-modal-icon,
 .form-field:focus .form-modal-icon {
