@@ -307,7 +307,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.form-field .form-input {
+.form-input {
   height: 38.95px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -318,30 +318,42 @@ ul {
   background-color: transparent;
   cursor: pointer;
 }
+
 .form-field .form-lable {
   text-align: left;
   margin-bottom: 4px;
 }
-.form-field:hover .form-input,
-.form-field:focus .form-input {
+.form-input:hover,
+.form-input:focus {
   border: 1px solid var(--accent-color);
 }
 
+.form-input:hover + .form-modal-icon,
+.form-input:focus + .form-modal-icon {
+  fill: var(--accent-color);
+}
 .form-textarea {
   height: 116.84px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
   padding-top: 12px;
   padding-left: 16px;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--main-txt-cl);
   transition: border var(--anim-duration) var(--timing-anim);
   outline: transparent;
   background-color: transparent;
   cursor: pointer;
 }
-.form-field:hover .form-textarea,
-.form-field:focus .form-textarea {
+
+.form-textarea:not(placeholder-shown) {
+}
+
+.form-textarea:hover,
+.form-textarea:focus {
   border: 1px solid var(--accent-color);
 }
 .form-field-checbox {
@@ -401,6 +413,7 @@ ul {
   margin-right: auto;
   cursor: pointer;
   transition: background-color var(--anim-duration) var(--timing-anim);
+  outline: transparent;
 }
 .form-input {
   display: block;
