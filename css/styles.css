@@ -294,17 +294,16 @@ ul {
   color: var(--second-txt-cl);
 }
 .inputs {
-  width: 448px;
-  height: 377px;
-  margin-top: 21px;
+  margin-top: 12px;
 }
 .form-field {
   width: 100%;
   display: flex;
-  /* поставить рядки один над одним */
   flex-direction: column;
-  /* position: relative; */
   margin-bottom: 10px;
+}
+.form-field:last-child {
+  margin-bottom: 0;
 }
 
 .form-input {
@@ -363,22 +362,23 @@ ul {
   margin-top: 20px;
   justify-content: center;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .custom-checbox {
+  display: block;
   width: 16px;
   height: 15px;
-  display: block;
   margin-right: 7px;
   align-items: center;
   justify-content: center;
 
   border-radius: 4px;
-  outline: 1px solid #000000;
-  outline-offset: -1px;
+  outline: 2px solid #000000;
+  outline-offset: -2px solid #000000;
 }
 .custom-checbox-icon {
+  display: block;
   opacity: 0;
   transition: opacity var(--anim-duration) var(--timing-anim);
 }
@@ -388,6 +388,7 @@ ul {
 .form-input-yes:checked + .custom-checbox {
   background-color: var(--accent-color);
   outline: 2px solid var(--accent-color);
+  outline-offset: -2px solid var(--accent-color);
   fill: #ffffff;
 }
 .contract {
