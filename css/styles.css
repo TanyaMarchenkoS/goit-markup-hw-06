@@ -347,10 +347,6 @@ ul {
   background-color: transparent;
   cursor: pointer;
 }
-
-.form-textarea:not(placeholder-shown) {
-}
-
 .form-textarea:hover,
 .form-textarea:focus {
   border: 1px solid var(--accent-color);
@@ -364,6 +360,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .custom-checbox {
   display: block;
@@ -372,13 +369,18 @@ ul {
   margin-right: 7px;
   align-items: center;
   justify-content: center;
-
-  border-radius: 4px;
-  outline: 2px solid #000000;
-  outline-offset: -2px solid #000000;
+  border-radius: 2px;
+  border: 2px solid #000000;
+  transition: border var(--anim-duration) var(--timing-anim);
 }
 .custom-checbox-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   display: block;
+  border-radius: 2px;
+  border: 2px solid var(--accent-color);
+  fill: #ffffff;
   opacity: 0;
   transition: opacity var(--anim-duration) var(--timing-anim);
 }
@@ -387,10 +389,9 @@ ul {
 }
 .form-input-yes:checked + .custom-checbox {
   background-color: var(--accent-color);
-  outline: 2px solid var(--accent-color);
-  outline-offset: -2px solid var(--accent-color);
-  fill: #ffffff;
+  border: 2px var(--accent-color);
 }
+
 .contract {
   color: var(--accent-color);
 }
