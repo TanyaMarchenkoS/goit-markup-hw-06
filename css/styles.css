@@ -212,9 +212,9 @@ ul {
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition-property: background-color, box-shadow;
-  transition-duration: var(--anim-duration);
-  transition-timing-function: var(--timing-anim);
+  transition: background-color var(--anim-duration) var(--timing-anim),
+    box-shadow var(--anim-duration) var(--timing-anim),
+    color var(--anim-duration) var(--timing-anim);
 }
 
 /* модальное окно */
@@ -583,8 +583,7 @@ ul {
   background-color: #ffffff;
   border-radius: 50%;
 
-  transition: fill var(--anim-duration) var(--timing-anim),
-    background-color var(--anim-duration) var(--timing-anim);
+  transition: background-color var(--anim-duration) var(--timing-anim);
 }
 .socials-link:hover,
 .socials-link:focus {
@@ -599,10 +598,9 @@ ul {
 }
 .socials-icon {
   fill: #afb1b8;
-}
-.socials-item .socials-link {
   transition: fill var(--anim-duration) var(--timing-anim);
 }
+
 /* Постоянные клиенты */
 .clients-title {
   font-weight: 700;
@@ -827,6 +825,7 @@ ul {
   letter-spacing: 0.06em;
 
   margin-left: 12px;
+  cursor: pointer;
 }
 button {
   padding: 0;
